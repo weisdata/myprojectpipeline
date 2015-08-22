@@ -1,0 +1,31 @@
+
+.progress-box {
+	width: 100%;
+	float: right;
+}
+
+.progress-box-icon {
+	width: 25%;
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+.slogan {
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+.add-slogan {
+	padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.head-container {
+	padding-top: 30px;
+}
+
+.done_container p {
+	font-size: 11pt;
+}

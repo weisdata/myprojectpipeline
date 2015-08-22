@@ -1,0 +1,34 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+<div class="row masonry-container">
+	<p>hello, test here!</p>
+	{% if message %}
+	  {{ messsage }}
+	{% endif %}
+
+	<div class="col-lg-6 col-md-6 col-sm-6">
+		<div class="thumbnail">
+			<div class="caption">
+				<form action="" method="post">{% csrf_token %}
+			    {{ formset.management_form }}
+
+			    <div class="panel-group" id="accordion">
+			    {% for form in formset %}
+			    	
+			    	{{form.as_p}}
+
+			    	<hr>
+	            	
+			    {% endfor %}
+			    </div>
+			    <input type="submit" value="Update" />
+			    </form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
